@@ -1,4 +1,5 @@
-#1.soru
+#1.Kullanıcının girdiği boy ve ağırlık değerlerine göre vücut kitle indeksini (VKİ = ağırlık/(boy*boy)) hesaplayınız.
+
 boy = float(input("Lütfen boyunuzu metre cinsinden girin: "))
 kilo = float(input("Lütfen kilonuzu girin: "))
 
@@ -8,13 +9,13 @@ vki = kilo / (boy ** 2)
 
 print("Vücut Kitle İndeksi (VKİ):", vki)
 
-#2.soru
+#2.Maaşı ve zam oranı girilen işçinin zamlı maaşını hesaplayarak ekranda gösteriniz
 maas=float (input("Maaşı Giriniz : "))
 zam=float (input("Zam Oranı(%) : "))
 yeniMaas=(maas)+((maas)*(zam)/100)
 print("Zamlı Maaş :",yeniMaas)
 
-#3. soru
+#3.Kullanıcının girdiği üç sayı arasında en büyük olanı bulan ve sonucu yazdıran bir program yazınız
 sayi1 = float(input("Birinci sayıyı girin: "))
 sayi2 = float(input("İkinci sayıyı girin: "))
 sayi3 = float(input("Üçüncü sayıyı girin: "))
@@ -30,7 +31,7 @@ else:
     buyuk_sayi = sayi3
 print("En büyük sayı:", buyuk_sayi)
 
-#4. soru
+#4.Dairenin alanını ve çevresini hesaplayan python kodunu yazınız.(Dairenin yarıçapını kullanıcıdan alınız)
 import math
 yaricap = float(input("Dairenin yarıçapını girin: "))
 alan = math.pi * yaricap**2
@@ -38,7 +39,8 @@ cevre = 2 * math.pi * yaricap
 print("Dairenin Alanı:", alan)
 print("Dairenin Çevresi:", cevre)
 
-#5.soru
+#5.Kullanıcıdan alınan bir sayının palindrom olup olmadığını bulan bir program yazınız.
+
 sayi=int(input("sayi giriniz "))
 
 sayinin_ilk_hali=sayi
