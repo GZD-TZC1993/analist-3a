@@ -1,0 +1,12 @@
+def vergi_hesapla(gelir):
+  vergi_orani = 0.18  # Varsayılan vergi oranı
+  vergi_miktari = gelir * vergi_orani
+  return vergi_miktari
+
+# Kullanıcıdan gelir bilgisini al
+gelir = float(input("Yıllık gelirinizi girin: "))
+
+# Vergi hesabını yap ve sonucu yazdır
+vergi = vergi_hesapla(gelir)
+print("Ödenecek vergi miktarı:", vergi)
+
