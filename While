@@ -1,0 +1,42 @@
+# Sihirbaz tarafından seçilen gizli sayı
+gizli_sayi = 7
+
+while True:
+  # Kullanıcıdan bir tamsayı girmesini isteyin
+  try:
+    kullanici_sayi = int(input("Bir sayı girin: "))
+  except ValueError:
+    print("Geçersiz giriş! Lütfen bir tamsayı girin.")
+    continue  # Geçersiz giriş olduğunda döngünün tekrarlanmasını sağlar
+
+  # Kullanıcı tarafından girilen numaranın sihirbaz tarafından seçilen sayıyla aynı olup olmadığını kontrol edin
+  if kullanici_sayi != gizli_sayi:
+    print("Ha ha! You're stuck in my loop!")
+  else:
+    print("Well done, muggle! You are free now.")
+    break  # Doğru sayı girildiğinde döngüyü sonlandırır
+
+print("""
++================================+
+| Welcome to my game, muggle!    |
+| Enter an integer number        |
+| and guess what number I've     |
+| picked for you.                |
+| So, what is the secret number? |
++================================+
+""")
+
+while True:
+  giris = input("Bir kelime girin: ")
+  if giris == "kalem":
+    print("You've successfully left the loop.")
+    break
+
+user_word = input("Bir kelime girin: ")
+user_word = user_word.upper()
+
+for letter in user_word:
+  # Ünlü harfleri kontrol et
+  if letter in ['A', 'E', 'I', 'O', 'U']:
+    print(letter, "yendi!")
+    continue  # Ünlü harf olduğunda döngünün geri kalanını atla
