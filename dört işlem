@@ -1,0 +1,53 @@
+sayi1 = int(input("Bir sayı girin: "))
+sayi2 = int(input("Bir sayı girin: "))
+
+sonuc_toplam = sayi1 + sayi2
+sonuc_fark = sayi1 - sayi2
+sonuc_carpim = sayi1 * sayi2
+sonuc_bolum=sayi1/sayi2
+
+# Eğer sayi2 sıfıra eşitse, sıfıra bölme hatası alacağız.
+# Bu yüzden bölmeyi sadece sayi2 sıfıra eşit değilse yapacağız.
+if sayi2 != 0:
+  sonuc_bolum = sayi1 / sayi2
+else: 
+  print = "Sıfıra bolme hatası!"
+
+  
+print("Toplamın cevabı:", sonuc_toplam)
+print("Farkın cevabı:", sonuc_fark)
+print("Çarpımın cevabı:", sonuc_carpim)
+print("Bölümün cevabı:", sonuc_bolum)
+print("That's all folks!")
+
+#saat hesaplama
+hour = int(input("Starting time (hours): "))
+mins = int(input("Starting time (minutes): "))
+dura = int(input("Event duration (minutes): "))
+
+# İlk başta belirlediğiniz değerlerle işlem yapılmış gibi gösterilmiştir.
+sonuc_hour = 12
+sonuc_mins = 58
+sonuc_dura = 500
+
+# Bitiş saati hesaplanıyor
+bitis_saat = hour + (mins + dura) // 60
+bitis_dakika = (mins + dura) % 60
+
+print("Finish time:", bitis_saat % 24, bitis_dakika)
+
+hour = int(input("Starting time (hours): "))
+mins = int(input("Starting time (minutes): "))
+dura = int(input("Event duration (minutes): "))
+
+# Başlangıç saatinin dakika cinsinden değeri
+baslangic_dakika = hour * 60 + mins
+
+# Olay süresi eklenerek bitiş saatinin dakika cinsinden değeri hesaplanıyor
+bitis_dakika = baslangic_dakika + dura
+
+# Bitiş saati hesaplanıyor
+bitis_saat = bitis_dakika // 60
+bitis_dakika %= 60
+
+print("Finish time:", bitis_saat % 24, bitis_dakika)
