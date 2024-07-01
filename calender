@@ -1,0 +1,13 @@
+import calendar
+print(calendar.weekheader(1))
+
+
+
+import calendar
+
+c = calendar.Calendar()
+
+for weekday in c.iterweekdays():
+    print(weekday, end=" ")
+
+
