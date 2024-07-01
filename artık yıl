@@ -1,0 +1,28 @@
+year = int(input("Enter a year: "))
+
+if year % 4 == 0:
+    if year % 100 == 0:
+        if year % 400 == 0:
+            print("Tam yıl")
+        else:
+            print("Artık yıl")
+    else:
+        print("Tam yıl")
+else:
+    print("Artık yıl")
+
+print(year, year)
+
+
+x = 10
+
+if x > 5:  # True
+    if x == 6:  # False
+        print("nested: x == 6")
+    elif x == 10:  # True
+        print("nested: x == 10")
+    else:
+        print("nested: else")
+else:
+    print("else")
+
