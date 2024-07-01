@@ -1,0 +1,14 @@
+baslik = "haberiniz olsun"
+vade = 12
+faizOrani = 1.47
+print(baslik)
+
+mesaj = "hoşgeldin"
+musteriAdi = "gözde"
+musteriSoyadi = "tuzcu"
+sonucMesaj = mesaj + " " + musteriAdi + " " + musteriSoyadi
+print(sonucMesaj)
+
+sayi1 = 10
+sayi2 = 20
+print(sayi1 + sayi2)
